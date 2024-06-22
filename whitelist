@@ -1,0 +1,19 @@
+local HWIDTable = loadstring(game:HttpGet("Insert Link Here"))() -- We are making a variable for where your HWID / ClientID table is going to be located. (You can use pastebin / github)
+
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId() -- We are creating a variable to get your own HWID / ClientID so we can search through the table for it.
+
+--[[
+	Down below you will see a for loop and I will explain it's purpose here.
+
+	if one of the value's (string) is in the HWID table, then it will print "The HWID is Whitelisted. HWID:" then it will also print your HWID.
+	
+	if one of the value's (string) is not within the HWID table, then it will print "The HWID is not Whitelisted. HWID:" then it will also print out your HWID.
+]]
+
+for i,v in pairs(HWIDTable) do 
+	if v == HWID then
+		print ("The HWID is Whitelisted. HWID: ", HWID)
+	end elseif v ~= HWID then
+		print("The HWID is not Whitelisted. HWID: ", HWID)
+	end	
+end
