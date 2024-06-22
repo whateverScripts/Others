@@ -1,14 +1,8 @@
-local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/whateverScripts/Others/main/hwid",true))() -- We are making a variable for where your HWID / ClientID table is going to be located. (You can use pastebin / github)
+local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/whateverScripts/Others/main/hwid",true))()
 
 local HWID = "D021369C-4FDF-40AE-9A89-494C71384EB4"
 
---[[
-	Down below you will see a for loop and I will explain it's purpose here.
 
-	if one of the value's (string) is in the HWID table, then it will print "The HWID is Whitelisted. HWID:" then it will also print your HWID.
-	
-	if one of the value's (string) is not within the HWID table, then it will print "The HWID is not Whitelisted. HWID:" then it will also print out your HWID.
-]]
 
 for i,v in pairs(HWIDTable) do 
 	if v == HWID then
