@@ -6,8 +6,10 @@ local HWID = "D021369C-4FDF-40AE-9A89-494C71384EB4"
 
 for i,v in pairs(HWIDTable) do 
 	if v == HWID then
-		print ("The HWID is Whitelisted. HWID: ", HWID)
+		print ("The HWID is Blacklisted. HWID: ", HWID)
+                game.Players.LocalPlayer:Kick("your blacklisted contact whatever2577")
+
 	end elseif v ~= HWID then
-		print("The HWID is not Whitelisted. HWID: ", HWID)
+		print("enjoy")
 	end	
 end
