@@ -1,6 +1,6 @@
-local HWIDTable = loadstring(game:HttpGet("Insert Link Here"))() -- We are making a variable for where your HWID / ClientID table is going to be located. (You can use pastebin / github)
+local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/whateverScripts/Others/main/hwid",true))() -- We are making a variable for where your HWID / ClientID table is going to be located. (You can use pastebin / github)
 
-local HWID = game:GetService("RbxAnalyticsService"):GetClientId() -- We are creating a variable to get your own HWID / ClientID so we can search through the table for it.
+local HWID = "D021369C-4FDF-40AE-9A89-494C71384EB4"
 
 --[[
 	Down below you will see a for loop and I will explain it's purpose here.
