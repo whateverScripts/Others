@@ -1,6 +1,6 @@
 local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/whateverScripts/Others/main/hwid",true))()
 
-local HWID = "D021369C-4FDF-40AE-9A89-494C71384EB4"
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
 
 
 
